@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Playlists do Spotify</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background-color: #1db954;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+        .playlists {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .playlist {
+            flex: 1 1 calc(33.333% - 20px); /* 3 colunas com espaçamento */
+            margin: 10px;
+        }
+        .playlist iframe {
+            border-radius: 12px;
+            width: 100%;
+            height: 352px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .playlist {
+                flex: 1 1 calc(50% - 20px); /* 2 colunas em telas médias */
+            }
+        }
+        @media (max-width: 480px) {
+            .playlist {
+                flex: 1 1 100%; /* 1 coluna em telas pequenas */
+            }
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1db954;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Minhas Playlists do Spotify</h1>
+    </div>
+    <div class="container">
+        <div class="playlists">
+            <div class="playlist">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4yCQ4E0cLuiA8bJ7M165fO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="playlist">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7nFryJpRTmjH1DJ7534DY0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="playlist">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4XgHhJuRlu2f55kLWz5BX6?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Minhas Playlists
+    </div>
+</body>
+</html>
